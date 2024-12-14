@@ -1,5 +1,10 @@
 package com.ecommerce.payment.interfaces;
 
-public interface PaymentService {
+import com.ecommerce.payment.model.PaymentRequest;
+import com.ecommerce.payment.model.PaymentResponse;
 
+public interface PaymentService {
+	public Long processPayment(PaymentRequest payReq);
+	
+	public PaymentResponse getPaymentDetailsByOrderId(Long orderId);
 }

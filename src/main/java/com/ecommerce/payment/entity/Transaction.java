@@ -36,7 +36,7 @@ public class Transaction {
 	
 	private String paymentStatus;
 	
-	private Long amount;
+	private Float amount;
 	
 	
 	
